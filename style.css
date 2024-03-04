@@ -11,6 +11,7 @@
 .subhead{
     float: left;
     margin-left: 2px;
+    align-items:center;
 }
 
 #stylelogo{
@@ -51,6 +52,7 @@
 #flag{
     width: 70px;
     height: 50px;
+    margin-left: 5px;
 }
 
 #cart{
@@ -154,7 +156,7 @@ a{
 
 .toggle-btn{
     position: absolute;
-    top: 2rem;
+    top: 5rem;
     right: 4rem;
     display: none;
     flex-direction: column;
@@ -170,7 +172,7 @@ a{
     border-radius: 10px;
 }
 
-@media (max-width:1000px){
+@media (max-width:1500px){
     .toggle-btn{
         display:flex;
     }
@@ -178,4 +180,46 @@ a{
     #list{
         display: none;
     }
+}
+
+@media(max-width:700px){
+    #searchbar input{
+        width: 150px;
+        height: 25px;
+    }
+
+    #locationlogo{
+        width: 20px;
+        height: 25px;
+
+    }
+
+    #flag{
+        width: 30px;
+        height: 25px;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    #searchlogo{
+        width: 20px;
+    }
+    
+    #cart{
+        width: 5px;
+    }
+
+    .secondmain{
+        display: inline;
+        width: 100%;
+    }
+
+
+    .main{
+        width: 100%;
+        height: 100%;
+        background-image: url(/assets/background\ picture2.png);
+        
+    }
+
 }
