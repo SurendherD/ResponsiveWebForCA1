@@ -1,62 +1,58 @@
 *{
     font-family: 'Cabin';
+    padding: 0;
+    margin: 0;
 }
 
 .head{
     height: 60px;
     width: 100%;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-
 .subhead{
-    float: left;
-    margin-left: 2px;
-    align-items:center;
+    align-content: center;
 }
 
-#stylelogo{
-    margin-top: 5px;
-    
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #locationlogo{
     width: 40px;
     height: 40px;
     border-radius: 2px;
-    margin-top: 10px;
-    float: left;
-    
 }
-
-#all{
-    margin-left: 1px;
+#address{
     color: white;
-    display: inline-block;
-    margin-top: 5px;
 }
-
-
-
-#searchlogo{
-    background-color: #FF9900;
-    width: 30px;
-    height: 30px;
-}
-
-#searchbar input{
-    width: 1150px;
+#all{
     height: 40px;
-    border-radius: 5px;
+    width: 40px;
+    font-size: 18px;
+    border: none;
+}
+#searchlogo{
+    background-color: gold;
+    width: 40px;
+    height: 35px;
+    border: none;
+}
+
+#searchbar{
+    width: 1100px;
+    height: 40px;
+    border: none;
 }
 
 #flag{
-    width: 70px;
-    height: 50px;
-    margin-left: 5px;
-}
-
-#cart{
-    margin-top: 10px;
+    width: 40px;
+    height: 30px;
 }
 
 .navigationbar{
@@ -64,15 +60,40 @@
     width: 100%;
     height: 45px;
     background-color: 	#232f3e;
+    display: flex;
 }
 
-#list{
-    display: inline;
-    margin-left: 25px;
-    font-size: 25px;
-    list-style-type: none;
-    text-align: center;
-    color: white;
+.list{
+    border: 1px solid black;
+    width: 100%;
+    height: 45px;
+    background-color: 	#232f3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+    border: none;
+    font-size: 18px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    border: none;
+    width: 600px;
+    color: aliceblue;
+}
+
+#date{
+    display: flex;
+}
+#dayndate{
+    display: flex;
+}
+
+#dates{
+    width: fit-content;
 }
 
 a{
@@ -83,71 +104,70 @@ a{
     margin-top: -150px;
     width: 100%;
     height: 850px;
-    background-image: url("/assets/background\ picture.png");
+    background-image: url("./assets/background\ picture.png");
+    background-size: cover;
 }
 
 .arrows{
     width: 95%;
     height: 380px;
-    margin-left: 50px;
+    margin-top: 150px;
 }
 
 #arr{
+    display: flex;
+    margin-left: 25px;
+}
+#left,#right{
     margin-top: 150px;
 }
 
 #right{
-    text-align: right;
+    display: flex;
+    margin-left: 100%;
 }
 
-
-.firstbox{
-    width: 350px;
-    height: 350px;
-    float: left;
-    margin-left: 100px;
+.firstbox,.secondbox,.thirdbox{
+    width: 370px;
+    height: 450px;
     background-color: white;
     border-radius: 5px;
+    gap: 25px;
 }
-
-.secondbox{
-    width: 350px;
-    height: 350px;
-    float: left;
-    margin-left: 75px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-.thirdbox{
-    width: 350px;
-    height: 350px;
-    float: left;
-    margin-left: 75px;
-    background-color: white;
-    border-radius: 5px;
-}
-
 .fourthbox{
-    width: 350px;
-    height: 350px;
-    float: left;
-    margin-left: 75px;
+    width: 370px;
+    height: 175px;
     background-color: white;
     border-radius: 5px;
+    gap: 25px;
+}
+
+#firstbox,#secondbox,#thirdbox{
+    text-align: center;
+    margin-top: 10%;
+}
+
+#lastimage{
+margin-top: 25%;
+width: 370px;
+height: 175px;
 }
 
 .secondmain{
     width: auto;
     height: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 #btn{
     width: 250px;
-    margin-left: 35px;
+    margin-left: 15%;
     background-color: gold;
     border-radius: 5px;
     height: 30px;
+    border: none;
+    margin-top: 20px;
 }
 
 .navigationbar li:hover{
